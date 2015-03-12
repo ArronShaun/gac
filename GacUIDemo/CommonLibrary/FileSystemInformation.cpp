@@ -13,6 +13,7 @@ WString GetWindowsDirectory()
 	return folderPath;
 }
 
+// get all directories and files
 void SearchDirectoriesAndFiles(const WString& path, List<WString>& directories, List<WString>& files)
 {
 	// Use FindFirstFile, FindNextFile and FindClose to enumerate all directories and files
@@ -252,3 +253,6 @@ LARGE_INTEGER FileProperties::GetSize()
 	Load();
 	return size;
 }
+
+// over
+
